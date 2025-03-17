@@ -78,8 +78,8 @@ def display(video_path, model_path):
                         annotated_frame,
                         [points],
                         isClosed=False,
-                        color=(0, 0, 255),  # Red color
-                        thickness=2,  # Thinner line
+                        color=(0, 0, 255),
+                        thickness=2,
                     )
 
             # Display the annotated frame
@@ -139,8 +139,8 @@ def display_webcam(model_path):
                         annotated_frame,
                         [points],
                         isClosed=False,
-                        color=(0, 0, 255),  # Red color
-                        thickness=2,  # Thinner line
+                        color=(0, 0, 255),
+                        thickness=2,
                     )
 
             # Display the annotated frame
