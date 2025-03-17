@@ -164,13 +164,14 @@ def test():
 
 
 if __name__ == "__main__":
-    # os.makedirs("result", exist_ok=True)
-    # yaml_path = "coco.yaml"
-    # model_path = "yolo12n.pt"
-    # save_dir = "result"
-    # video_path = "./mytest/1.mp4"
-    # result_model_path = os.path.join(save_dir, "runs/detect/train/weights/best.pt")
-    # train(model_path, yaml_path, save_dir)
-    # valid(yaml_path, result_model_path)
-    # display(video_path, result_model_path)
-    test()
+    # todo 将下面的路径修改为正确的路径，如果相对路径出错，需要替换为绝对路径
+    # todo 服务器路径/root/autodl-tmp/Yolo
+    yaml_path = os.path.join(os.getcwd(), "coco.yaml")
+    model_path = os.path.join(os.getcwd(), "yolo12n.pt")
+    save_dir = os.path.join(os.getcwd(), "result")
+    video_path = os.path.join(os.getcwd(), "mytest/1.mp4")
+    result_model_path = os.path.join(save_dir, "runs/detect/train/weights/best.pt")
+    train(model_path, yaml_path, save_dir)
+    valid(yaml_path, result_model_path)
+    display(video_path, result_model_path)
+    # test()
