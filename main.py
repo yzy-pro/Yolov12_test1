@@ -164,7 +164,7 @@ def test():
 
 
 if __name__ == "__main__":
-    # todo 将下面的路径修改为正确的路径，如果相对路径出错，需要替换为绝对路径
+    # todo 将下面的路径修改为正确的路径，如果相对路径出错，建议替换为绝对路径
     # todo 服务器路径/root/autodl-tmp/Yolo
     yaml_path = os.path.join(os.getcwd(), "coco.yaml")
     model_path = os.path.join(os.getcwd(), "yolo12n.pt")
